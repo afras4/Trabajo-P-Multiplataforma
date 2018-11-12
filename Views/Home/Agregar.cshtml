@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Agregar Evento";
+}
+@model Evento
+<h2>Formulario para agregar un evento al calendario</h2>
+@Html.ValidationSummary()
+<form asp-action="Agregar" method="post">
+
+<div class="form-group">
+    <label>Nombre:</label>
+    <input type="text" class="form-control" asp-for="Nombre" />
+    <label>Direccion:</label>
+    <input type="text" class="form-control" asp-for="Direccion" />
+    <label>Foto:</label>
+    <input type="text" class="form-control" asp-for="Foto" />
+    <label>Fecha:</label>
+    <input type="DateTime" class="form-control" asp-for="Fecha" />
+    
+</div>
+<button type="submit">Registrar</button>
+
+</form>
+
+

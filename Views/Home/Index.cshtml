@@ -1,0 +1,17 @@
+﻿@model List<Evento>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@foreach(var evento in Model) {
+    <h2>@evento.Nombre </h2>
+    <h3>Descripcion: @evento.Descripcion </h3>
+    <h3>Direccion: @evento.Direccion </h3>
+    <h3>Fecha: @evento.Fecha? </h3>
+    <img src="@evento.Foto" width="300" />
+    
+}
+
+
+

@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Registrarte";
+}
+@model Alumno
+<h2>@ViewData["Title"]</h2>
+
+
+<h2>Formulario para agregar un evento al calendario</h2>
+@Html.ValidationSummary()
+<form asp-action="AgregarAlumno" method="post">
+
+<div class="form-group">
+    <label>Nombre:</label>
+    <input type="text" class="form-control" asp-for="Nombre" />
+    <label>Codigo:</label>
+    <input type="int" class="form-control" asp-for="Codigo" />
+    <label>Contrasena:</label>
+    <input type="text" class="form-control" asp-for="Password" />
+</div>
+<button type="submit">Registrar</button>
+
+</form>
