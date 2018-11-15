@@ -13,8 +13,10 @@
     <input type="text" class="form-control" asp-for="Direccion" />
     <label>Foto:</label>
     <input type="text" class="form-control" asp-for="Foto" />
+    <label>Descripcion: </label>
+    <input type="text" class="form-control" asp-for="Descripcion" />
     <label>Fecha:</label>
-    <input type="DateTime" class="form-control" asp-for="Fecha" />
+    <input type="date" value="2018-11-12" class="form-control" asp-for="Fecha" min="2018-11-12"/>
     
 </div>
 <button type="submit">Registrar</button>

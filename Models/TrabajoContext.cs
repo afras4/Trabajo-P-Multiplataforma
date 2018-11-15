@@ -30,7 +30,8 @@ namespace Trabajo.Models
                     Nombre="Trabajo comunitario",
                     Direccion="Av Los frutales 666 La molina",
                     Descripcion="Ayudar a recibir alimentos y bebidas y empaquetarlas para ser llevadas a puno",
-                    Foto="https://api.netnoticias.mx/im/2017/09/10/770x490-tMlnQSNblV09w.JPG"
+                    Foto="https://api.netnoticias.mx/im/2017/09/10/770x490-tMlnQSNblV09w.JPG",
+                    
                 
                 }
             );

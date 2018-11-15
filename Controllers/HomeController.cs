@@ -19,7 +19,7 @@ namespace Trabajo.Controllers
         }
         public IActionResult Index()
         {
-            var lista = _context.Eventos.Include(x => x.Nombre).Include(x=>x.Descripcion)
+            var lista = _context.Eventos
                                        .OrderByDescending(b => b.Id)
                                        .ToList();
 
